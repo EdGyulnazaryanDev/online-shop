@@ -122,7 +122,6 @@
             socketEmployer.emit('onlineEmployer', {
                 'employerId' : $('input[name="employerId"]').val()
             })
-
             let isAdmin = $('input[name="isAdmin"]').val();
             if(isAdmin) {
                 let token = $('input[name="_token"]').val();
