@@ -108,7 +108,6 @@
     <input type="hidden" name="userId" value="{{ !is_null(auth()->user()) ? auth()->user()->id : 0  }}">
     <input type="hidden" name="isAdmin" value="{{ !is_null(auth()->user()) ? auth()->user()->is_admin : 0  }}">
     <input type="hidden" name="employerUuid" value="{{ !is_null(auth('employer')->user()) ? auth('employer')->user()->id : 0  }}">
-    <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
 
     <script>
         $(document).ready(function (){
